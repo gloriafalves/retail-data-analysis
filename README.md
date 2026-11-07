@@ -22,7 +22,7 @@ O projeto resolve um problema end-to-end de negócios a partir de arquivos bruto
 
 | Etapa / Módulo | Descrição do Problema de Negócio | Stack / Ferramentas | Diretório no Repositório |
 | :--- | :--- | :--- | :--- |
-| **Q1. EDA Inicial** | Diagnóstico de volume, qualidade e confiabilidade da tabela de vendas (`orders`). | SQL (PostgreSQL / DBeaver) | [`01_eda_sql/`](./01_eda_sql/) |
+| **Q1. EDA Inicial** | Diagnóstico de volume, qualidade e confiabilidade da tabela de vendas (`orders`). | SQL (SQLite / DBeaver) | [`01_eda_sql/`](./01_eda_sql/) |
 | **Q2. Inferência de Schema** | Geração dinâmica do arquivo `schema.sql` usando apenas bibliotecas nativas do Python. | Python 3 (Pure) | [`02_pipeline_ingestao/q2_inferencia_schema.py`](./02_pipeline_ingestao/q2_inferencia_schema.py) |
 | **Q3. Carga de Dados** | Ingestão robusta de 24 tabelas CSV no banco PostgreSQL preservando integridade. | Python, SQLAlchemy, Pandas | [`02_pipeline_ingestao/q3_carga_dados.py`](./02_pipeline_ingestao/q3_carga_dados.py) |
 | **Q4. Análise de Clientes** | Identificação dos "Clientes Fiéis" (alto ticket médio + diversidade >= 13 categorias). | PostgreSQL (CTEs, Window Functions) | [`03_analises_sql/q4_analise_clientes.sql`](./03_analises_sql/q4_analise_clientes.sql) |
